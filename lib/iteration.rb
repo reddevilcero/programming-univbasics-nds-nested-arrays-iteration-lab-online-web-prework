@@ -19,11 +19,7 @@ def find_greater_pair(src)
   new_array = []
 
   src.each { |array|
-    if array[0] > array[1]
-      new_array << array[0]
-    else
-      new_array << array[1]
-    end
+    array[0] > array[1]? new_array << array[0] : new_array << array[1]
   }
  return new_array
 end
